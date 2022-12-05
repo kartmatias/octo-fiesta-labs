@@ -16,7 +16,7 @@ class AlticciApplicationTests {
 
 	@Test
 	void testAddRemoveObjects() {
-		AlticciSimpleCache<Integer, Integer> cache = new AlticciSimpleCache<>(200,500, 6);
+		AlticciSimpleCache<Integer, Integer> cache = new AlticciSimpleCache<>(200,500);
 		cache.put(2,200);
 		cache.put(3,300);
 		cache.put(4,400);

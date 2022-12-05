@@ -10,7 +10,7 @@ public class AlticciServiceTest {
 
     @Test
     public void testServiceGenerate() throws Exception {
-        AlticciSimpleCache<Integer,Integer> cache = new AlticciSimpleCache<>(500,600,6);
+        AlticciSimpleCache<Integer,Integer> cache = new AlticciSimpleCache<>(500,600);
         AlticciService service = new AlticciService(cache);
         assertEquals(100,service.validate("100"));
         assertEquals(0, service.generate(0));

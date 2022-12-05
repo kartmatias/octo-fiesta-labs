@@ -17,7 +17,7 @@ public class AlticciSimpleCache<K, T> {
         }
     }
     
-    public AlticciSimpleCache(long AlticciTimeToLive, final long AlticciTimerInterval, int maxItems) {
+    public AlticciSimpleCache(long AlticciTimeToLive, final long AlticciTimerInterval) {
         this.timeToLive = AlticciTimeToLive * 1000;
         AlticciCacheMap = new HashMap<Integer, Object>();
         if (timeToLive > 0 && AlticciTimerInterval > 0) {
